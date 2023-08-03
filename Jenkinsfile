@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Bhuilding..."
+                echo "Biiuilding..."
                
             }
         }
