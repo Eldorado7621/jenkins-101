@@ -11,7 +11,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                sh '''pip install python3
+                sh '''
+                sudo apt update
+                sudo apt install python3-pip
+                pip install python3
                 cd myapp
                 pip install -r requirements.txt
                 '''
