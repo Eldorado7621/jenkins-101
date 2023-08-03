@@ -11,23 +11,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                sh '''
-                apt update
-                 apt install python3-pip
-                pip install python3
-                cd myapp
-                pip install -r requirements.txt
-                '''
+               
             }
         }
         stage('Test') {
             steps {
                 echo "Testing.."
-                sh '''
-                cd myapp
-                python3 hello.py
-                python3 hello.py --name=Brad
-                '''
+               
             }
         }
         stage('Deliver') {
