@@ -1,7 +1,7 @@
-pipeline {
+kins_agentpipeline {
     agent { 
         node {
-            label 'dnae_docker_agent'
+            label 'jenkins_agent'
             }
       }
    
