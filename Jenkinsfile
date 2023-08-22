@@ -1,4 +1,4 @@
-kins_agentpipeline {
+pipeline {
     agent { 
         node {
             label 'jenkins_agent'
